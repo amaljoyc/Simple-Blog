@@ -1,0 +1,21 @@
+<body align='center' bgcolor='#FFF8DC'>
+	
+<br><br>
+
+<h1>{{ get_post }}</h1>
+<i><h4>{{ get_post.pub_date }}</h4></i> 
+<h3>{{ get_post.article }} </h3>
+ 
+<br><br>
+
+{% for com_name in get_comment_list %}
+   <b>{{ com_name.uname.username }}</b> <br> <i>{{ com_name.com_date }}</i> <br> {{ com_name.comment }}
+   <br><br>
+{% endfor %}
+
+<form action="/comment/" method="post">{% csrf_token %}
+	{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+
+</body>

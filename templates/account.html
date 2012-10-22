@@ -1,0 +1,25 @@
+<body align='center' bgcolor='#FFF8DC'>
+
+
+<br>
+{% for notice in request.get_notification  %}
+  {{ notice.message }}
+{% endfor %}
+<br>
+
+
+  <h2>................................</h2>
+  <h1>Welcome {{ uname }}</h1>
+  <h2>................................</h2>
+ 
+ <h2>
+ <a href="/addpost/">Add Post</a>
+ &nbsp;&nbsp;
+ <a href="/editpost/">Edit Post</a>
+ &nbsp;&nbsp;
+ <a href="/deletepost/">Delete Post</a>
+ &nbsp;&nbsp;
+ <a href="/logout/">Log Out</a>
+ </h2>
+
+</body>

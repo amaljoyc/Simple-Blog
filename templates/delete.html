@@ -1,0 +1,9 @@
+<body align='center' bgcolor='#FFF8DC'>
+
+  <h2>Below are the articles of {{ user.username }}</h2>
+  <h3>Press a title to delete it</h3>
+  <br><br>
+  {% for title in title_list %}
+  <a href="/deletepost/{{ title.id }}"> {{ title }} </a>
+  <br><br>
+  {% endfor %}

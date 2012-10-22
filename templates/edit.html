@@ -1,0 +1,11 @@
+<body align='center' bgcolor='#FFF8DC'>
+
+  <h2>Below are the articles of {{ user.username }}</h2>
+  <h3>Press a title to edit it</h3>
+  <br><br>
+  {% for title in title_list %}
+  <a href="/editpost/{{ title.id }}"> {{ title }} </a>
+  <br><br>
+  {% endfor %}
+
+</body>

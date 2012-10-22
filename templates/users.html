@@ -1,0 +1,11 @@
+<body align='center' bgcolor='#FFF8DC'>
+
+	<h1>Registered Users</h1>
+  <h2>Click on the users to show their blog</h2>
+  <br><br>
+  {% for user in user_list %}
+  <a href="/posts/{{ user.username }}"> {{ user.username }} </a>
+  <br><br>
+  {% endfor %}
+
+</body>

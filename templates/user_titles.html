@@ -1,0 +1,8 @@
+<body align='center' bgcolor='#FFF8DC'>
+
+  <h2>Below are the articles of {{ get_user.username }}</h2>
+  <br><br>
+  {% for title in title_list %}
+  <a href="/posts/{{ title.uname }}/{{ title.id }}"> {{ title }} </a>
+  <br><br>
+  {% endfor %}

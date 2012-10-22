@@ -1,0 +1,6 @@
+<body align='center' bgcolor='#FFF8DC'>
+	<form action="/editsubmit/{{ get_id }}/" method="post">{% csrf_token %}
+	    {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+</body>

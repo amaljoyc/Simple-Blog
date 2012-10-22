@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title>My Blog</title>
+</head>
+
+<body align='center' bgcolor='#FFF8DC'>
+
+  <h2>................................</h2>
+  <h1>My Blog</h1>
+  <h2>................................</h2>
+ 
+	
+  <br>
+  <br>
+  {% for title in title_list %}
+  <a href="/posts/{{ title.id }}"> {{ title }} </a>
+  <br>
+  <br>
+  {% endfor %}
+
+</body>
+</html>
